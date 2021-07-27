@@ -8,14 +8,14 @@ monthly_rate = 0
 years = 0
 number_of_payments = 0
 
-#While statement for user input for principal payment
+#While loop for user input for principal payment
 while True:
   principal = float(input("Principal ($1K - $1M): "))
   if principal >= 1000 and principal <= 1000000:
     break;
   print("Enter a value between 1000 and 1000000: ")
 
-#While statement for user input for annual interest rate
+#While loop for user input for annual interest rate
 while True:
   annual_rate = float(input("Annual interest rate: "))
   if annual_rate >= 1 and annual_rate <= 30:
@@ -23,7 +23,7 @@ while True:
     break;
   print("Enter a value between 1 and 30: ")
 
-#While statement for user input for period of years
+#While loop for user input for period of years
 while True:
   years = int(input("Period (Years): "))
   if years >= 1 and annual_rate <= 30:
@@ -36,4 +36,4 @@ mortgage = principal * (monthly_rate * (1 + monthly_rate) ** number_of_payments)
 #Format mortgage as U.S currency
 mortgage = "${:,.2f}".format(mortgage)
 #Print the monthly payment
-print(mortgage)
+print("Mortgage: " + mortgage)
