@@ -3,7 +3,7 @@ package com.practice;
 import java.text.NumberFormat;
 import java.util.Scanner;
 
-class Main {
+public class Main {
 
     public static void main(String[] args) {
         
